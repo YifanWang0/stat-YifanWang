@@ -33,7 +33,7 @@ int main(){
 
   char permissions[100];
   sprintf(permissions, "%o", file_stats.st_mode & 511);
-  printf("File permissions: d");
+  printf("File permissions: -");
   for (int i = 0; i < 3; i++) {
       if (permissions[i] == '0') {
           printf("---");
